@@ -5,14 +5,15 @@ import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from
 
 // Your web app's Firebase configuration 
 const firebaseConfig = {
-    apiKey: "AIzaSyCxAcyX1iStBG-AWiW0VD9DJD7bGb3jAJ8",
-    authDomain: "spoilerhub-bff5e.firebaseapp.com",
-    projectId: "spoilerhub-bff5e",
-    storageBucket: "spoilerhub-bff5e.appspot.com",
-    messagingSenderId: "782186873976",
-    appId: "1:782186873976:web:2353c5bc832862cce3998d",
-    measurementId: "G-SXG115FWY2"
-};
+    apiKey: "AIzaSyDLHCpqwj39NzUP-rAOUNerj3em2bdepLw",
+    authDomain: "spoilerhub-32c29.firebaseapp.com",
+    databaseURL: "https://spoilerhub-32c29-default-rtdb.firebaseio.com",
+    projectId: "spoilerhub-32c29",
+    storageBucket: "spoilerhub-32c29.firebasestorage.app",
+    messagingSenderId: "420414738753",
+    appId: "1:420414738753:web:9fec2404469e833e1fd1c0",
+    measurementId: "G-EZX36DE3LE"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -20,7 +21,7 @@ const analytics = getAnalytics(app);
 const auth = getAuth(app);
 
 // TMDB API key
-const tmdbApiKey = 'ce57cffb12c8c26d717f0a68d8e8bee1';
+const tmdbApiKey = 'ca7226233e23be7a82f302d0a86d02ad';
 
 // Function to fetch personalized trailers
 function fetchPersonalizedTrailers() {
